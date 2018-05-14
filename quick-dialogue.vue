@@ -4,9 +4,9 @@
 
     <v-flex>
 
-        <v-btn color="secondary" outline @click="show=true">{{buttonText}}</v-btn>
+        <v-btn :color="buttonColor" outline @click="show">{{buttonText}}</v-btn>
 
-        <v-dialog v-model="show" max-width="500px">
+        <v-dialog v-model="visible" :max-width="maxWidth">
 
             <v-card>
                 <v-card-title primary-title>
@@ -23,7 +23,7 @@
 
                 <v-card-actions>
                     <slot name="footer">
-                        <v-btn color="red" flat @click.stop="show=false">Close</v-btn>
+                        <v-btn color="red" flat @click.stop="hide">Close</v-btn>
                     </slot>
                 </v-card-actions>
 
@@ -44,8 +44,28 @@ export default {
 
     name: 'quick-dialogue',
 
+    props: {
+        
+        maxWidth: {
+            type: String,
+            default: '500px'
+        },
+
+        buttonText: {
+            type: String,
+            default: 'Quick Dialogue Button'
+        },
+
+        buttonColor: {
+            type: String,
+            default: 'primary'
+        },
+
+    },
+
     data(){return {
-        show: false
+        show: false,
+        visible: false
     }},
 
     mounted(){
@@ -53,6 +73,10 @@ export default {
     },
 
     methods: {
+
+        show() {this.visible = true},
+
+        hide() {this.visible = false}
 
     },
 
@@ -64,9 +88,3 @@ export default {
 }
 
 </script>
-
-<style lang="css" scoped>
-
-
-
-</style>
