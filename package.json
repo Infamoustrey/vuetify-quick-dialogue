@@ -1,6 +1,6 @@
 {
   "name": "vuetify-quick-dialogue",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple dialogue component for vuetify",
   "main": "./dist/quick-dialogue.js",
   "scripts": {
