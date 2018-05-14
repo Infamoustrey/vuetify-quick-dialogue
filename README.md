@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/vuetify-quick-dialogue.svg)](https://badge.fury.io/js/vuetify-quick-dialogue)
+
 # vuetify-quick-dialogue
 > A simple little dialogue box and button component for Vuetify apps
 
