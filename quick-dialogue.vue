@@ -64,7 +64,6 @@ export default {
     },
 
     data(){return {
-        show: false,
         visible: false
     }},
 
