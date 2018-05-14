@@ -4,9 +4,9 @@
 
     <v-flex>
 
-        <v-btn :color="buttonColor" outline @click="showbutton">{{buttonText}}</v-btn>
+        <v-btn :color="buttonColor" outline @click="activateButton">{{buttonText}}</v-btn>
 
-        <v-dialog v-model="visible" :max-width="maxWidth">
+        <v-dialog v-model="isVisible" :max-width="maxWidth">
 
             <v-card>
                 <v-card-title primary-title>
@@ -64,24 +64,17 @@ export default {
     },
 
     data(){return {
-        visible: false
+        isVisible: false
     }},
-
-    mounted(){
-
-    },
 
     methods: {
 
-        showbutton() { this.visible = true; },
+        activateButton() { this.isVisible = true; },
 
-        hide() { this.visible = false; }
+        hide() { this.isVisible = false; }
 
     },
 
-    computed: {
-
-    }
 
 
 }
