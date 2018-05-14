@@ -4,7 +4,7 @@
 
     <v-flex>
 
-        <v-btn :color="buttonColor" outline @click="showButton">{{buttonText}}</v-btn>
+        <v-btn :color="buttonColor" outline @click="showbutton">{{buttonText}}</v-btn>
 
         <v-dialog v-model="visible" :max-width="maxWidth">
 
@@ -73,9 +73,9 @@ export default {
 
     methods: {
 
-        showButton() {this.visible = true},
+        showbutton() { this.visible = true; },
 
-        hide() {this.visible = false}
+        hide() { this.visible = false; }
 
     },
 
