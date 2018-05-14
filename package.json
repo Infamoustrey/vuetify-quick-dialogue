@@ -1,6 +1,6 @@
 {
   "name": "vuetify-quick-dialogue",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A simple dialogue component for vuetify",
   "main": "./dist/quick-dialogue.js",
   "scripts": {
@@ -17,6 +17,9 @@
     "url": "https://github.com/Infamoustrey/vuetify-quick-dialogue/issues"
   },
   "homepage": "https://github.com/Infamoustrey/vuetify-quick-dialogue#readme",
+  "dependencies": {
+    "vuetify": "1.0.17"
+  },
   "devDependencies": {
     "babel-core": "^6.10.4",
     "babel-loader": "^6.2.4",
@@ -28,7 +31,6 @@
     "rimraf": "^2.6.1",
     "uglifyjs-webpack-plugin": "^1.2.5",
     "vue": "2.5.16",
-    "vuetify": "1.0.17",
     "vue-html-loader": "^1.2.3",
     "vue-loader": "^11.1.4",
     "vue-style-loader": "^2.0.3",
