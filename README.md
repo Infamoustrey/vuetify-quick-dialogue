@@ -10,3 +10,11 @@
 Then in your `main.js` file
 
 ![install_main](./img/install_main.png)
+
+### Props
+
+Name           | Type   | Default                                            | Description
+-------------- | ------ | -------------------------------------------------- | ----------------------------------------------------------------------
+max-Width | String | 500px | Maximum Width of Dialogue Window
+buttonText | String | Quick Dialogue Button | Text for activating button
+buttonColor | String | primary | Sets color for activating button
